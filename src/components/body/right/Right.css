@@ -1,0 +1,48 @@
+.right {
+	flex: 0.48;
+	align-items: center;
+	justify-content: center;
+}
+
+.right__scrollable {
+	overflow-y: scroll;
+	height: 50vh;
+}
+
+.title {
+	color: white;
+	background-color: #eb4b3f;
+}
+
+.right__heading {
+	text-align: center;
+	background-color: #eb4b3f;
+}
+
+tr {
+	display: flex;
+}
+
+tr:nth-child(even) {
+	background-color: #eb4b3f;
+}
+
+td {
+	color: black;
+	padding: 0.3em 0.5em;
+}
+
+.right__table__td__name {
+	flex: 0.8;
+}
+
+.right__table__td__cases {
+	align-items: right;
+	align-content: flex-end;
+	flex: 0.2;
+}
+@media (min-width: 76.25em) {
+	.right {
+		max-width: 40%;
+	}
+}

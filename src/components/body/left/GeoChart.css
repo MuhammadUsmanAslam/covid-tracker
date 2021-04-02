@@ -1,0 +1,9 @@
+.geochart {
+	width: 100%;
+	height: auto;
+}
+
+.geochart__heading {
+	text-align: center;
+	background-color: #81d4fa;
+}

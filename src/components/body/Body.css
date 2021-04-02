@@ -1,0 +1,17 @@
+.body {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (max-width: 76.25em) {
+	.body {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 47.5em) {
+	.body {
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,52 @@
+* {
+	text-transform: capitalize;
+	cursor: default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+* {
+	padding: 0;
+	margin: 0;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+.app {
+	width: 80%;
+	margin: auto;
+	color: black;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}

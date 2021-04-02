@@ -1,0 +1,21 @@
+.left {
+	flex: 0.58;
+	align-content: center;
+}
+
+.card__container {
+	display: flex;
+	justify-content: space-around;
+}
+
+/* COVID ICON Rotating */
+.covid_icon {
+	animation: rotation 4s infinite linear;
+	margin: auto;
+}
+
+@media (max-width: 47.5em) {
+	.card__container {
+		flex-direction: column;
+	}
+}
