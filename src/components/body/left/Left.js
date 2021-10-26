@@ -34,12 +34,7 @@ function Left({ result, datewiseInfos, countries }) {
 					height="100"
 				/>
 			) : (
-				// <div>
-				// 	<h2 className="geochart__heading">
-				// 		Countrywise cases per million population
-				// 	</h2>
 				<GeoChart countries={countries} />
-				// </div>
 			)}
 		</div>
 	);

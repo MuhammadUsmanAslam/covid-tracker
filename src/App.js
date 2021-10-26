@@ -27,6 +27,9 @@ function App() {
 					datewiseRecovered: data.recovered,
 				};
 				setDatewiseInfos(datewiseInfoss);
+			})
+			.catch((err) => {
+				console.log(`No Data Found on server: ${err}`);
 			});
 	};
 
@@ -43,6 +46,9 @@ function App() {
 					totalDeaths: data.deaths,
 				};
 				setResult(res);
+			})
+			.catch((err) => {
+				console.log(`No Data Found on server: ${err}`);
 			});
 	};
 
@@ -59,6 +65,9 @@ function App() {
 				});
 				setCountries(countries);
 				console.log(data);
+			})
+			.catch((err) => {
+				console.log(`No Data Found on server: ${err}`);
 			});
 	};
 

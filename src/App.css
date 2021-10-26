@@ -31,22 +31,26 @@ h6,
 
 /* width */
 ::-webkit-scrollbar {
-	width: 5px;
+	width: 16px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: #f1f1f1;
-	border-radius: 5px;
+	background: #566a95;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #888;
-	border-radius: 5px;
+	background: #fff;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	background-clip: content-box;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #555;
+	background: #f1f1f1;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	background-clip: content-box;
 }

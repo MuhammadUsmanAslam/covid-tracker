@@ -5,5 +5,12 @@
 
 .geochart__heading {
 	text-align: center;
+	color: #1c3b7c;
 	background-color: #81d4fa;
+}
+
+@media (max-width: 76.25em) {
+	.geochart {
+		margin: 0.5em 0;
+	}
 }

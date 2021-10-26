@@ -2,31 +2,33 @@
 	flex: 0.48;
 	align-items: center;
 	justify-content: center;
+	color: #fff;
 }
 
 .right__scrollable {
 	overflow-y: scroll;
-	height: 50vh;
-}
-
-.title {
-	color: white;
-	background-color: #eb4b3f;
+	height: 40vh;
 }
 
 .right__heading {
 	text-align: center;
-	background-color: #eb4b3f;
+	background-color: #566a95;
+}
+
+.title {
+	background-color: #566a95;
 }
 
 tr {
 	display: flex;
+	background-color: #fff;
 }
 
 tr:nth-child(even) {
-	background-color: #eb4b3f;
+	background-color: rgba(0, 0, 0, 0);
 }
 
+th,
 td {
 	color: black;
 	padding: 0.3em 0.5em;
@@ -40,6 +42,11 @@ td {
 	align-items: right;
 	align-content: flex-end;
 	flex: 0.2;
+}
+
+.right__table__td__name,
+.right__table__td__cases {
+	color: #000;
 }
 @media (min-width: 76.25em) {
 	.right {

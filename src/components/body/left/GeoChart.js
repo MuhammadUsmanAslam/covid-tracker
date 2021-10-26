@@ -36,18 +36,14 @@ function GeoChart({ countries }) {
 						height="100"
 					/>
 				}
-				// width={"auto"}
-				// height={"auto"}
 				chartType="GeoChart"
 				data={[["Country", "CasesPerMillion"], ...geo]}
 				options={{
-					colorAxis: { colors: ["#e31b23", "#000000"] },
+					colorAxis: { colors: ["#e31b23", "#000"] },
 					backgroundColor: "#81d4fa",
 					datalessRegionColor: "#f8bbd0",
 					defaultColor: "#f5f5f5",
 				}}
-				// Note: you will need to get a mapsApiKey for your project.
-				// See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
 				mapsApiKey="YOUR_KEY_HERE"
 				rootProps={{ "data-testid": "1" }}
 			/>

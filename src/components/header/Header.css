@@ -4,21 +4,23 @@
 	justify-content: space-between;
 	width: 100%;
 	margin: auto;
-	padding: 0.3em 0 0.3em 0;
+	margin: 0.5em 0;
 }
 .header__logotext {
 	text-transform: uppercase;
-	font-weight: 800;
+	font-weight: 700;
+	color: #1c3b7c;
 }
 
 .header__select {
 	padding: 0.7em;
-	border-radius: 0.5em;
-	background-color: #00f729;
+	background-color: #1c3b7c;
+	color: #fff;
 	font-weight: 700;
 	text-align: center;
 	width: auto;
 	border: none;
+	font-family: "Rubik", sans-serif;
 }
 .header__select:focus {
 	outline: none;
