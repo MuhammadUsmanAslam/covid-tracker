@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "./Card";
-import CovidLogo from "../../.././assets/covid.png";
 import "./Left.css";
 import GeoChart from "./GeoChart";
+import CovidSpinner from "../../CovidSpinner";
 
 function Left({ result, datewiseInfos, countries }) {
 	return (
@@ -24,15 +24,8 @@ function Left({ result, datewiseInfos, countries }) {
 					total={result.totalDeaths}
 				/>
 			</div>
-
 			{datewiseInfos == null ? (
-				<img
-					src={CovidLogo}
-					alt="COVID-19"
-					className="covid_icon"
-					width="100"
-					height="100"
-				/>
+				<CovidSpinner />
 			) : (
 				<GeoChart countries={countries} />
 			)}

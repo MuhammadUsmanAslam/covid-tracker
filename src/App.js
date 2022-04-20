@@ -79,11 +79,7 @@ function App() {
 
 	return (
 		<div className="app">
-			<Header
-				countries={countries}
-				setCountry={setCountry}
-				countries={countries}
-			/>
+			<Header countries={countries} setCountry={setCountry} />
 			<Body
 				result={result}
 				datewiseInfos={datewiseInfos}

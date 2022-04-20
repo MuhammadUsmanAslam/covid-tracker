@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./GeoChart.css";
-import CovidLogo from "../../.././assets/covid.png";
 import { Chart } from "react-google-charts";
+import CovidSpinner from "../../CovidSpinner";
 
 function GeoChart({ countries }) {
 	const [geo, setGeo] = useState([]);
@@ -27,15 +27,7 @@ function GeoChart({ countries }) {
 				Countrywise cases per million population
 			</h2>
 			<Chart
-				loader={
-					<img
-						src={CovidLogo}
-						alt="COVID-19"
-						className="covid_icon"
-						width="100"
-						height="100"
-					/>
-				}
+				loader={<CovidSpinner />}
 				chartType="GeoChart"
 				data={[["Country", "CasesPerMillion"], ...geo]}
 				options={{

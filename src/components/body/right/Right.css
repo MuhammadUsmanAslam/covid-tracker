@@ -9,10 +9,31 @@
 	overflow-y: scroll;
 	height: 40vh;
 }
-
+.right__table {
+	width: 100%;
+}
 .right__heading {
 	text-align: center;
 	background-color: #566a95;
+}
+
+.right__table-headings {
+	display: flex;
+	background-color: #566a95;
+}
+
+.right__table-heading-left {
+	flex: 0.8;
+	padding: 0.3em 0.5em;
+}
+.right__table-heading-right {
+	flex: 0.2;
+	padding: 0.3em 0.5em;
+}
+
+.right__countries-list {
+	overflow-y: scroll;
+	height: 40vh;
 }
 
 .title {

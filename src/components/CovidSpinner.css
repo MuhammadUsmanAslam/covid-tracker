@@ -1,0 +1,15 @@
+/* COVID ICON Rotating */
+.covid-spinner__container {
+	padding: 2rem;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.covid-spinner_icon {
+	width: 50%;
+	height: auto;
+	animation: rotation 4s infinite linear;
+}

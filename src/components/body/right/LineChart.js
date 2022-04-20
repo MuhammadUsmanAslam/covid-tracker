@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./LineChart.css";
-import CovidLogo from "../../.././assets/covid.png";
+import CovidSpinner from "../../CovidSpinner";
 import { Chart } from "react-google-charts";
 
 function LineChart({ datewiseInfos }) {
@@ -35,15 +35,7 @@ function LineChart({ datewiseInfos }) {
 			width={"auto"}
 			height={"auto"}
 			chartType="Line"
-			loader={
-				<img
-					src={CovidLogo}
-					alt="COVID-19"
-					className="covid_icon"
-					width="100"
-					height="100"
-				/>
-			}
+			loader={<CovidSpinner />}
 			data={graphData}
 			options={{
 				chart: {

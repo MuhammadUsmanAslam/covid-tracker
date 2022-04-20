@@ -15,8 +15,12 @@ function Header({ countries, setCountry }) {
 					className="header__select"
 				>
 					<option value="worldwide">Worldwide</option>
-					{countries.map((country) => {
-						return <option value={country.value}>{country.name}</option>;
+					{countries.map((country, index) => {
+						return (
+							<option key={index} value={country.value}>
+								{country.name}
+							</option>
+						);
 					})}
 				</select>
 			</form>

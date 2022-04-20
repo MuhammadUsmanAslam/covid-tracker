@@ -9,16 +9,6 @@
 	margin: 0 0 10px 0;
 }
 
-/* COVID ICON Rotating */
-.covid_icon {
-	animation: rotation 4s infinite linear;
-	/* margin: auto; */
-	width: 50%;
-	height: auto;
-	top: 50%;
-	left: 50%;
-}
-
 @media (max-width: 47.5em) {
 	.card__container {
 		flex-direction: column;
